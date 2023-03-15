@@ -1,6 +1,6 @@
 ### TEENSY DRUM BRAIN
 This is basically a sketch for reading 9 Piezos and an FSR with a Teensy 3.x.
-8 of the Piezos simply use the MIDIcontroller library to send MIDI. The 9th
+Eight of the Piezos simply use the MIDIcontroller library to send MIDI. The 9th
 Piezo works in conjunction with the FSR to emulate (as closely as possible) the
 behavior of hi-hats.
 
