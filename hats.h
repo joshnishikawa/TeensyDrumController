@@ -4,17 +4,17 @@
 extern byte MIDIchannel;
 
 ////////// USER ASSIGNABLE /////////////////////////////////////////////////////
-unsigned int waitTime = 36; // in millis to filter aftershock triggers
+unsigned int waitTime = 30; // in millis to filter aftershock triggers
 int PIEZOthreshold = 30;    // lowest value that will trigger a hit
 int offThreshold   = 50;    // to eliminate jittery triggers of the FSR
 int onThreshold = 700;      // FSR value that indicates 'closed' hats
 
 ////////// NOT USER ASSIGNABLE /////////////////////////////////////////////////
-int PIEZOstate = 0;             // 0=idle, 1=looking for peak, 2=ignoring aftershock
+int PIEZOstate = 0;         // 0=idle, 1=looking for peak, 2=ignoring aftershock
 int PIEZOpeak = 0;
 elapsedMillis PIEZOtimer = 0;
 unsigned int hatsLevel = 0;
-int FSRstate = 0;               // 0=idle, 1=looking for peak, 2=ignoring aftershock
+int FSRstate = 0;           // 0=idle, 1=looking for peak, 2=ignoring aftershock
 int FSRpeak = 0;
 elapsedMillis FSRtimer = 0;
 elapsedMillis velocityMatchingTimer = 0; //so pedal won't trigger sounds much lower than the hits
